@@ -1,0 +1,19 @@
+
+.wait { display:none; }
+#div_success {
+	padding: 20px 10px 0px 10px;
+	border: 2px solid #178039;
+	margin: 10px 0px;
+}
+#div_success h3, #div_success p {
+	color: #178039;
+}
+
+#div_erreur {
+	padding: 20px 10px 0px 10px;
+	border: 2px solid #A20109;
+	margin: 10px 0px;
+}
+#div_erreur h3, #div_erreur p {
+	color: #A20109;
+}

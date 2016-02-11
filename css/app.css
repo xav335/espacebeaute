@@ -1,0 +1,115 @@
+@font-face {
+	font-family:'Channel';
+	src:
+		url('../fonts/Channel.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Channel.woff') format('woff'),
+		url('../fonts/Channel.ttf') format('truetype'),
+		url('../fonts/Channel.svg#Channel') format('svg');
+	font-weight:normal;
+	font-style:normal;
+}
+@font-face {
+	font-family:'CenturyGothic';
+	src: url('../fonts/Centurygothic.eot');
+	src: local(☺),
+		url('../fonts/Centurygothic.woff') format('woff'),
+		url('../fonts/Centurygothic.ttf') format('truetype'),
+		url('../fonts/Centurygothic.svg#webfontd60hyItJ') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+html, body, main {width:100%;height:100%;}
+
+.fullwidth {height:calc(100% - 291px);max-width:none;}
+
+.top-of-page {max-width:none;}
+.top-of-page .adresse {text-transform:uppercase;text-align:center;font-size:15px;line-height:18px;color:#ac0040;margin-top:30px;}
+.top-of-page .adresse a {font-size:22px;line-height:25px;color:#ac0040;cursor:default;}
+
+h1 {font-family:'Channel';font-size:30px;text-align:center;color:#ac0040;max-width:305px;margin:0 auto;margin-top:40px;margin-bottom:20px;}
+h1 span {display:block;font-size:13px;text-align:right;}
+
+h2, h3, h4, h5 {font-family:'Channel';font-size:24px;text-align:center;color:#aaa;}
+h4 {color:#ac0040;font-size:12px;margin-top:25px;margin-bottom:15px;}
+h5 {font-size:16px;color:#aaa;}
+
+nav, footer {background:#ac0040;}
+
+main {font-family:'CenturyGothic';}
+
+nav {text-align:center;font-size:14px;text-transform:uppercase;}
+nav a {display:inline-block;color:#fff;padding:10px 20px;}
+nav a:hover, nav a:focus, nav a.active {background:#fff;color:#ac0040;}
+
+.homeslider {display:block;background:url('../img/slider-homepage-01.jpg') no-repeat center center;background-size:cover;height:calc(100% - 291px);}
+
+.contenu {padding-top:40px;padding-bottom:50px;}
+.contenu .row {max-width:640px;}
+.contenu .texte {/*background:rgba(255,255,255,0.75);*/}
+.contenu h2 {margin:0 0 60px 0;}
+.contenu p {font-family:Arial, Helvetica, sans-serif;font-size:12px;line-height:15px;text-align:justify;}
+
+.contenu .sous-menu {font-family:'Channel';font-size:16px;line-height:35px;text-align:center;background:#f2f2f2;border-bottom:1px solid #aaa;clear:both;padding:25px 0;}
+.contenu .sous-menu a {color:#aaa;}
+.contenu .sous-menu a:hover, .contenu .sous-menu a:focus {color:#ac0040;}
+
+.le-salon .contenu {background:url('../img/bg-le-salon.jpg') no-repeat bottom right;}
+.nos-soins .contenu .row {max-width:940px;}
+
+.soins {padding-bottom:20px;border-bottom:1px solid #aaa;padding-top:35px;}
+.soins:last-of-type {border:none;}
+.soins h3 {margin-bottom:50px;}
+.soins img {border-radius:50%;display:block;margin:0 auto;}
+
+.go2top {position:fixed;bottom:150px;right:50px;display:block;background:url('../img/bt-top.png') no-repeat;width:37px;height:21px;}
+
+.nos-tarifs .contenu .row {max-width:940px;}
+.tarifs {padding-bottom:20px;border-bottom:1px solid #aaa;padding-top:35px;}
+.tarifs:last-of-type {border:none;}
+.tarifs h3 {margin-bottom:50px;}
+.tarifs p {text-align:center;}
+.tarifs .round {position:relative;border-radius:50%;margin:0 auto;overflow:hidden;height:221px;width:221px;}
+.tarifs .round p {position:absolute;line-height:221px;text-align:center;width:100%;color:#ac0040;font-family:'Channel';font-size:40px;z-index:10;}
+.tarifs .round img {opacity:0.5;}
+.tarifs .round:hover {background:#ac0040;}
+.tarifs .round:hover p {color:#fff;}
+.tarifs .round:hover img {opacity:0;}
+
+.photos {text-align:center;padding-top:20px;display:block;clear:both;}
+.photos img {border-radius:50%;border:5px solid #ac0040;}
+
+.maps {display:block;height:100%;}
+.window-content {width:265px;padding:20px;text-align:center;}
+.window-content h4 {font-size:20px;}
+.window-content p {text-transform:uppercase;color:#ac0040;margin-bottom:0;font-size:13px;}
+.window-content p:last-of-type {text-transform:none;}
+.window-content p:last-of-type:first-line {font-size:22px;}
+
+form[name="contact"] {background:rgba(255,255,255,1);}
+form[name="contact"] h3 {line-height:90px;}
+form[name="contact"] textarea {height:120px;resize:none;}
+form[name="contact"] button {background:#aaa;width:100%;text-align:center;text-transform:uppercase;line-height:30px;color:#fff;margin-bottom:10px;}
+form[name="contact"] button:hover {background:#ac0040;}
+form[name="contact"] p {font-size:10px;line-height:12px;font-style:italic;}
+form[name="contact"] input.erreur, form[name="contact"] textarea.erreur {
+	border:1px solid #CC3300;
+}
+
+.mentions .contenu .row {max-width:1000px;}
+
+.inscription {background:#eee;padding:20px;}
+.inscription h3 {text-align:center;color:#fff;}
+.inscription input, .inscription textarea {background:#fff;border:1px solid #aaa;}
+.inscription textarea {height:149px;resize:none;}
+.inscription .columns:last-child {text-align:center;}
+.inscription input[type="submit"] {font-family:'Channel';font-size:18px;line-height:25px;padding:10px 30px;background:#eee;color:#ac0040;border:none;}
+.inscription input[type="submit"]:hover {background:#ac0040;color:#fff;}
+.inscription input.erreur, .inscription textarea.erreur {
+	border:1px solid #CC3300;
+}
+
+footer {clear:both;text-align:center;color:#fff;font-size:11px;text-transform:uppercase;padding:20px;}
+footer img {display:block;margin:0 auto;margin-bottom:15px;}
+footer a {color:#fff;padding:0 2px;}
+footer a:hover, footer a.active {color:#ac0040;background:#fff;}
