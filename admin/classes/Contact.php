@@ -270,7 +270,7 @@ class Contact extends StorageManager {
 			}
 	
 		} catch (Exception $e) {
-			throw new Exception("Erreur Mysql ". $e->getMessage());
+			throw new Exception("Erreur contactDeleteALL Mysql ". $e->getMessage());
 			return "errrrrrrooooOOor";
 		}
 	}

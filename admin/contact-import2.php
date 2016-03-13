@@ -2,7 +2,7 @@
 <?php include_once 'classes/utils.php';?>
 <?php 
 require 'classes/Contact.php';
-
+require( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/inc.config.php" );
 $contact = new Contact();
 
 if (!empty($_GET)) { // GET GET GET
