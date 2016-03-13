@@ -33,7 +33,7 @@ class Tarif extends StorageManager {
 		$val[ "texte" ] = addslashes( $post[ "texte" ] );
 		$val[ "prix" ] = floatval( $post[ "prix" ] );
 		$val[ "image" ] = addslashes( $post[ "url0" ] );
-		$val[ "online" ] = ( $post[ "online" ] = '1' ) ? '1' : '0';
+		$val[ "online" ] = ( $post[ "online" ] == '1' ) ? '1' : '0';
 		
 		// ---- Modification / Ajout -------- //
 		$id = ( $modification )

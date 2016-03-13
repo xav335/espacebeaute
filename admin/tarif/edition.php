@@ -109,7 +109,7 @@
 						
 						<div class="form-group" >
 							<label class="col-sm-2" for="titre">En ligne :</label>
-							<input type="checkbox" name="online" <?=$online?>>
+							<input type="checkbox" name="online" <?=$online?> value="1">
 						</div>
 						
 						<div class="form-group"><br>

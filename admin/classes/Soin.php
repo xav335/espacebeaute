@@ -32,7 +32,7 @@ class Soin extends StorageManager {
 		$val[ "titre" ] = addslashes( $post[ "titre" ] );
 		$val[ "texte" ] = addslashes( $post[ "texte" ] );
 		$val[ "image" ] = addslashes( $post[ "url0" ] );
-		$val[ "online" ] = ( $post[ "online" ] = '1' ) ? '1' : '0';
+		$val[ "online" ] = ( $post[ "online" ] == '1' ) ? '1' : '0';
 		
 		// ---- Modification / Ajout -------- //
 		$id = ( $modification )

@@ -37,7 +37,7 @@ CREATE TABLE `admin` (
 
 LOCK TABLES `admin` WRITE;
 /*!40000 ALTER TABLE `admin` DISABLE KEYS */;
-INSERT INTO `admin` VALUES (1,'immo','immo33','administrateur'),(2,'admin','admin335','ico');
+INSERT INTO `admin` VALUES (1,'espace','espace33','administrateur'),(2,'admin','admin335','ico');
 /*!40000 ALTER TABLE `admin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -193,7 +193,7 @@ CREATE TABLE `news` (
   `image1` varchar(250) DEFAULT NULL,
   `online` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id_news`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -202,7 +202,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (30,'2016-01-07 00:00:00','Nouveaux produits','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.','/20150812_141201-30.jpg',1),(31,'2015-11-22 00:00:00','L\'autre jour...',' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque ut risus id aliquam. Duis dapibus rhoncus neque ac tempus. Nunc laoreet tincidunt libero, a fermentum lacus semper ac. Donec lobortis pretium urna euismod auctor. Duis ut mattis metus, ac ultricies eros. Etiam a porta purus, efficitur pulvinar nibh. Mauris a rutrum quam. In arcu leo, egestas vitae mi a, viverra finibus mauris. Nunc consectetur tellus at ligula pulvinar sodales efficitur quis est. Proin porttitor massa mauris, ut vulputate nulla malesuada sed. Mauris fermentum fermentum rhoncus. Nullam convallis at enim at placerat. Nulla ut augue tincidunt diam egestas luctus. Sed orci justo, pellentesque vel aliquet non, ornare id est. Donec dui sapien, varius eu lectus at, ullamcorper ornare nunc. Quisque a sollicitudin metus.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non blandit ligula, eu congue elit. Etiam tempor tortor non ante placerat placerat. Quisque convallis porttitor nisi, nec euismod velit sollicitudin at. Duis pretium ex sed enim consectetur, eu egestas diam vestibulum. Aliquam vulputate turpis et risus congue interdum. Fusce molestie, magna vel interdum volutpat, purus est lobortis erat, eget interdum lorem massa sed risus. Morbi justo dolor, convallis eget cursus eu, luctus eu lectus. Vestibulum mi risus, condimentum a nibh vel, imperdiet consectetur purus. Praesent vel ante erat. In hac habitasse platea dictumst. Aenean pellentesque enim nisi, vel varius justo fringilla in. Vestibulum scelerisque pretium dolor, vel pretium metus dapibus sed. Aenean gravida, erat quis tempus pulvinar, ligula odio imperdiet velit, in semper leo augue id neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;\r\n\r\nNam nec odio ut erat rutrum tempor. Etiam luctus, ante nec sodales lobortis, ipsum sapien ultricies orci, nec blandit odio nunc in ligula. Mauris a egestas turpis, a tristique libero. Proin aliquam ex ac feugiat pellentesque. Aliquam ac nibh sit amet nunc sodales tincidunt. Aenean nec facilisis tortor, porta iaculis dui. Aliquam id iaculis purus. Praesent id mi sed turpis eleifend interdum. Pellentesque ac fringilla ex. ','/20150812_163027-31.jpg',1);
+INSERT INTO `news` VALUES (30,'2016-01-07 00:00:00','Nouveaux produits','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.','/SallyHayden_Guinot3-30.jpg',1),(31,'2015-11-22 00:00:00','L\'autre jour...',' Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque ut risus id aliquam. Duis dapibus rhoncus neque ac tempus. Nunc laoreet tincidunt libero, a fermentum lacus semper ac. Donec lobortis pretium urna euismod auctor. Duis ut mattis metus, ac ultricies eros. Etiam a porta purus, efficitur pulvinar nibh. Mauris a rutrum quam. In arcu leo, egestas vitae mi a, viverra finibus mauris. Nunc consectetur tellus at ligula pulvinar sodales efficitur quis est. Proin porttitor massa mauris, ut vulputate nulla malesuada sed. Mauris fermentum fermentum rhoncus. Nullam convallis at enim at placerat. Nulla ut augue tincidunt diam egestas luctus. Sed orci justo, pellentesque vel aliquet non, ornare id est. Donec dui sapien, varius eu lectus at, ullamcorper ornare nunc. Quisque a sollicitudin metus.\r\n\r\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque non blandit ligula, eu congue elit. Etiam tempor tortor non ante placerat placerat. Quisque convallis porttitor nisi, nec euismod velit sollicitudin at. Duis pretium ex sed enim consectetur, eu egestas diam vestibulum. Aliquam vulputate turpis et risus congue interdum. Fusce molestie, magna vel interdum volutpat, purus est lobortis erat, eget interdum lorem massa sed risus. Morbi justo dolor, convallis eget cursus eu, luctus eu lectus. Vestibulum mi risus, condimentum a nibh vel, imperdiet consectetur purus. Praesent vel ante erat. In hac habitasse platea dictumst. Aenean pellentesque enim nisi, vel varius justo fringilla in. Vestibulum scelerisque pretium dolor, vel pretium metus dapibus sed. Aenean gravida, erat quis tempus pulvinar, ligula odio imperdiet velit, in semper leo augue id neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;\r\n\r\nNam nec odio ut erat rutrum tempor. Etiam luctus, ante nec sodales lobortis, ipsum sapien ultricies orci, nec blandit odio nunc in ligula. Mauris a egestas turpis, a tristique libero. Proin aliquam ex ac feugiat pellentesque. Aliquam ac nibh sit amet nunc sodales tincidunt. Aenean nec facilisis tortor, porta iaculis dui. Aliquam id iaculis purus. Praesent id mi sed turpis eleifend interdum. Pellentesque ac fringilla ex. ','/soin_corps_guinot-31.jpg',1),(32,'2016-03-07 00:00:00','Gamme complete des produits solaire','Longue vie soleil,\r\nUni bronze,\r\nGrand soin après soleil,\r\nSctik indice 50 visage, \r\nCreme visage 50 \r\nSpray protestion corps ','/images_4_-.jpg',1),(33,'2016-03-07 00:00:00','Baume Nutri Logic douceur et confort pour le corps','Adoucit et réconforte la peau immédiatement,nourrit la peau durablement,protége la peau toute la journée','/568e48fcd199c-.jpg',1),(34,'2016-03-05 00:00:00','Minceur Rapide','La solution simple rapide et efficace,\r\ndiminution de l\'aspect visible de la cellulite,\r\nAnti -gras bruleur de  graisses\r\nAnti-eau drainage minceur','/1618_66398c-.png',1),(35,'2016-03-03 00:00:00','Poudre soleil et le Gloss été','Effet bronzé naturellement et le gloss pour apporter le coté glamour \r\n','/10093295_duo_poudre_teint_soleil-.jpg',1),(36,'2016-03-03 00:00:00','Sérum Bioxygene','Hydratation de la peau et  redonne de éclat du teint  pour une peau en pleine forme,défatigue les traits pour un teint frais et reposé\r\nConcentré éclat et vitalité','/1626_db7ff0-.png',1),(37,'2016-03-01 00:00:00','400 ml PROMO Gommage facile et hydrazone corps','GOMMAGE EXFOLIANT ET LE LAIT HYDRAZONE ','/56c6f2c58fec3-.jpg',1),(38,'2016-03-04 00:00:00','Hydraderm Energy Cellular','NOUVEL APPAREIL POUR LES SOINS STAR GUINOT','/images_1_-.jpg',1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -275,7 +275,7 @@ CREATE TABLE `soin` (
   `image` varchar(50) NOT NULL,
   `online` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -284,7 +284,7 @@ CREATE TABLE `soin` (
 
 LOCK TABLES `soin` WRITE;
 /*!40000 ALTER TABLE `soin` DISABLE KEYS */;
-INSERT INTO `soin` VALUES (1,1,'Peel\'in / Peel\'out','Le gel peel\'in aux acides de fruits dissocie les cellules mortes des cellules vivantes et la mousse peel\'out exfolie les cellules mortes pour faire renaitre l\'éclat d\'une peau neuve','/20150812_163027-.jpg','1'),(2,3,'Le drainage','Le déplacement des boules de drainage effectué par les gestes expert de l\'esthéticienne, dénoue visiblement, les tensions, améliore la micro-circulation cutanée. 	','','1'),(3,3,'La stimulation musculaire','Durant la stimulation musculaire, les muscles \"travaillent\", reprennent du volume, de la tonicité et les traits sont retendus.','','1'),(4,3,'Le modelage','L\'esthéticienne pratique le modelage à la fin du soin, pour nourrir la peau, la régénérer, la raffermir et la tonifier.','','1');
+INSERT INTO `soin` VALUES (1,1,'Peel\'in / Peel\'out','Le gel peel\'in aux acides de fruits dissocie les cellules mortes des cellules vivantes et la mousse peel\'out exfolie les cellules mortes pour faire renaitre l\'éclat d\'une peau neuve','/35e221e3ebd787de0636cac049b9461d-1.jpg','1'),(7,7,'Douceur Relaxant  (californien ,sportifs,balinais)','Succombez à une merveilleuse sensation de bien être et de détente\r\nSoin manuel délassant détoxifie la peau et vous procure un instant de détente et de plénitude absolue.','/GUINOT_MASSAGE-7.jpg','1'),(9,6,'Soin Minceur ','30 min le soin traite toutes les surfaces du corps  et permet de réduire la cellulite partout ou elle se trouve en instant sur les zones critiques telles que le ventre,les hanches et les cuisses \r\nréduit visiblement l\'aspect capitonné de la peau et agit au coeur des cellules.\r\nVotre silhouette  retrouve ses formes','/images_3_-9.jpg','1'),(10,4,'Soin Pro-collagène ','50 Min le soin Liftosome est un soin dédié 100% à la fermeté et la jeunesse de la peau ;aide votre peau à retrouver toutes son élasticité.','/35e221e3ebd787de0636cac049b9461d-10.jpg','1'),(12,13,'Hydradermie Lift','60 Min le visage parait plus jeune la peau est raffermie,les traits sont remontés.\r\nil agit profondément en remontant les traits par la stimulation des muscles le visage est visiblement lifté\r\nSoin effet lifting en institut ,si puissant qu\'il défie instantanément la chirurgie esthetique','','1'),(13,15,'Hydraderm','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Hydratation\r\n*Pureté\r\n*Nutrition\r\n*Prepartion/ Réparation solaire','','1'),(14,15,'Hydradermie Jeunesse','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Anti Rides','/84201c33_5a8a_470d_955c_b1fb9d78-14.jpg','1'),(15,15,'Hydradermie Lift','60 Min le visage parait plus jeune la peau est raffermie,les traits sont remontés.\r\nil agit profondément en remontant les traits par la stimulation des muscles le visage est visiblement lifté\r\nSoin effet lifting en institut ,si puissant qu\'il défie instantanément la chirurgie esthetique.\r\n*Age Logic Anti -Age','/84201c33_5a8a_470d_955c_b1fb9d78-15.jpg','1'),(16,16,'Eye logic','Soin du contour des yeux\r\ncible les rides et ridules (patte d\'oie ride du lion)\r\ncible les cernes et les poches du contour des yeux','/images-16.jpg','1'),(17,17,'Age Summum','50 Min pour enlever les années à votre visage\r\ndes actifs puissants,gommage dermabrasion ,vitamine C pure hautement concentrée,sérum age summum enrichi a l\'acide hyaluronique,puis le masque éclat au pro collagène\r\nDes la fin du soin,la peau parait visiblement plus jeunes et les signes de l\'age sont atténués','/soin_guinot_summum-17.jpg','1'),(18,5,'Visage et Corps','Sourcils ou Lèvre\r\nMenton\r\nJoues\r\nDemi Jambes\r\nJambes Entières\r\nAisselles\r\nMaillot Normal,Semi,Intégrale\r\nTrose /Dos\r\n\r\n\r\n','/technispa_minceur_guinot_beaut_-18.jpg','1'),(19,18,'Maquillage','Mariée ,\r\nJour,\r\nSoirée,\r\nRéveillon de nouvel année\r\n','/Fotolia_39356433_XS-.jpg','1'),(20,18,'Soin des Mains et Soin des Pieds','Mise en beauté des ongles avec ou sans pose de vernis','/SallyHayden_Guinot3-20.jpg','1');
 /*!40000 ALTER TABLE `soin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -300,7 +300,7 @@ CREATE TABLE `soin_categorie` (
   `titre` varchar(50) NOT NULL,
   `sous_titre` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -309,7 +309,7 @@ CREATE TABLE `soin_categorie` (
 
 LOCK TABLES `soin_categorie` WRITE;
 /*!40000 ALTER TABLE `soin_categorie` DISABLE KEYS */;
-INSERT INTO `soin_categorie` VALUES (1,'Beauté neuve','Les secrets du soin'),(2,'Hydradermie','Les secrets du soin'),(3,'Cabine lift','Les secrets du soin'),(4,'Liftosome','Les secrets du soin'),(5,'Epilation','Plus nette, plus longtemps'),(6,'Corps amincissant','Aromatic corps'),(7,'Douceur et détente','Les secrets du soin');
+INSERT INTO `soin_categorie` VALUES (1,'Beauté neuve','Les secrets du soin'),(4,'Liftosome','Les secrets du soin'),(5,'Epilation','Plus nette, plus longtemps'),(6,'Soin Minceur ',' Corps Amincissant'),(7,'Douceur et détente','Massage du  corps'),(9,'Eye logic','soin contour des yeux'),(10,'Age Summum','50 min pour gommer les signes de l\'age'),(15,'Soin Visage',''),(16,'Traintement des yeux',''),(17,'Traitement des signes de l\' age','Age Summum'),(18,'Mise en Beaute','');
 /*!40000 ALTER TABLE `soin_categorie` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -329,7 +329,7 @@ CREATE TABLE `tarif` (
   `image` varchar(50) NOT NULL,
   `online` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -338,7 +338,7 @@ CREATE TABLE `tarif` (
 
 LOCK TABLES `tarif` WRITE;
 /*!40000 ALTER TABLE `tarif` DISABLE KEYS */;
-INSERT INTO `tarif` VALUES (1,1,'CatioVital','Double Ionisation 60 min',63,'/20150812_163410-.jpg','1'),(2,1,'qqq','qqqq',100,'','1'),(3,1,'art 3','333',125,'/20150812_163027-.jpg','1'),(4,2,'Vive le Guinot!',':)',250,'/369x200-4.jpg','1');
+INSERT INTO `tarif` VALUES (4,2,'fini les poils','Possibilite epilaction sur zones\r\nFORFAIT 5 SEANCES\r\n*Maillot\r\n*Aisselles\r\n*Jambes\r\n*Torse/dos\r\n*Levre/Menton',250,'/369x200-4.jpg','1'),(5,9,'Age Summum','50 Min pour enlever les années à votre visage\r\ndes actifs puissants,gommage dermabrasion ,vitamine C pure hautement concentrée,sérum age summum enrichi a l\'acide hyaluronique,puis le masque éclat au pro collagène\r\nDes la fin du soin,la peau parait visiblement plus jeunes et les signes de l\'age sont atténués',93,'/soin_guinot_summum-5.jpg','1'),(7,4,'Lifting Immediat','60 Min le visage parait plus jeune la peau est raffermie,les traits sont remontés.\r\nil agit profondément en remontant les traits par la stimulation des muscles le visage est visiblement lifté\r\nSoin effet lifting en institut ,si puissant qu\'il défie instantanément la chirurgie esthetique',91,'','1'),(8,7,'Soin Pro-collagène ','50 Min le soin Liftosome est un soin dédié 100% à la fermeté et la jeunesse de la peau ;aide votre peau à retrouver toutes son élasticité.',79,'/SOIN_GUINOT-8.jpg','1'),(9,5,'Douceur Relaxant (californien ,sportifs,balinais)','Succombez à une merveilleuse sensation de bien être et de détente\r\nSoin manuel délassant détoxifie la peau et vous procure un instant de détente et de plénitude absolue.',78,'/soin_corps_guinot-9.jpg','1'),(10,1,'Minceur','30 min le soin traite toutes les surfaces du corps et permet de réduire la cellulite partout ou elle se trouve en instant sur les zones critiques telles que le ventre,les hanches et les cuisses \r\nréduit visiblement l\'aspect capitonné de la peau et agit au coeur des cellules.\r\nVotre silhouette retrouve ses formes',30,'/images_3_-10.jpg','1'),(11,4,'Hydraderm','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Hydratation\r\n*Pureté\r\n*Nutrition\r\n*Prepartion/ Réparation solaire',65,'','1'),(12,4,'Hydradermie Jeunesse','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Anti Rides\r\n',79,'','1'),(13,9,'Eye logic','Soin du contour des yeux\r\ncible les rides etridules (patte d\'oie, ride du lion)\r\ncible les cernes et les poches du contour des yeux',56,'/images-13.jpg','1');
 /*!40000 ALTER TABLE `tarif` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -353,7 +353,7 @@ CREATE TABLE `tarif_categorie` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titre` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -362,7 +362,7 @@ CREATE TABLE `tarif_categorie` (
 
 LOCK TABLES `tarif_categorie` WRITE;
 /*!40000 ALTER TABLE `tarif_categorie` DISABLE KEYS */;
-INSERT INTO `tarif_categorie` VALUES (1,'Corps'),(2,'Soins Guinot'),(3,'Soins Mary Cohr');
+INSERT INTO `tarif_categorie` VALUES (1,'Corps'),(2,'Epilaction'),(4,'Soin Visage'),(5,'Soin Detente'),(6,'Soin Minceur '),(7,'Liftosome'),(8,'Hydradermie Lift'),(9,'Soin traitant les signes de l\'age');
 /*!40000 ALTER TABLE `tarif_categorie` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -375,4 +375,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-02-11 19:09:03
+-- Dump completed on 2016-03-13 15:54:27

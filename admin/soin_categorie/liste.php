@@ -61,7 +61,7 @@
 						<div class="panel-body">
 							<form name="formulaire" class="form-horizontal" method="POST" action="/admin/soin_categorie/traitement.php" >
 								<input type="hidden" name="mon_action" id="mon_action" value="gerer">
-								<input type="hidden" name="id" value="<?=$id?>">
+								<input type="hidden" name="id" id="id" value="<?=$id?>">
 								
 								<div class="row">
 									<div class="row">
@@ -77,7 +77,8 @@
 						      	<div class="row ">	
 						      		<div class="col-md-3">&nbsp;</div>	
 									<div class="col-md-8"><br>
-										<button class="btn btn-success col-sm-10" type="submit" > <?=$btn_creation_categorie?> </button>
+										<a href="javascript:void(0);" class="btn btn-info col-sm-5 initialiser" >Ré-initialiser</a>
+										<button class="btn btn-success col-sm-5" type="submit" > <?=$btn_creation_categorie?> </button>
 									</div>		
 								</div>	
 							</form>
@@ -137,7 +138,11 @@
 			// DOM Ready
 			$(function() {
 				
-				
+				$( ".initialiser" ).click(function() {
+					$( "#id" ).val( '' );
+					$( "#titre" ).val( '' );
+					$( "#sous_titre" ).val( '' );
+				});
 				
 			});
 			

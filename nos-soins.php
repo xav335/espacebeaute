@@ -80,6 +80,7 @@
 						if ( 1 == 1 ) {
 							unset( $recherche );
 							$recherche[ "id_categorie" ] = $_categorie[ "id" ];
+							$recherche[ "online" ] = '1';
 							$liste_soin = $soin->getListe( $recherche, $debug );
 						}
 						// --------------------------------------------------- //

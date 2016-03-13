@@ -81,6 +81,7 @@
 						if ( 1 == 1 ) {
 							unset( $recherche );
 							$recherche[ "id_categorie" ] = $_categorie[ "id" ];
+							$recherche[ "online" ] = '1';
 							$liste_tarif = $tarif->getListe( $recherche, $debug );
 						}
 						// --------------------------------------------------- //

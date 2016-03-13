@@ -164,6 +164,9 @@
 						<div class="large-12 columns">
 							<textarea id="message" name="message" placeholder="Votre message"></textarea>
 						</div>
+						<div class="large-12 medium-12 columns">
+							<input type="checkbox" name="newsletter" value="on" />&nbsp;Je souhaite m'inscrire sur la newsletter et ainsi recevoir vos offres spéciales.
+						</div>
 						<div class="large-12 columns">
 							<button class="envoyer">Envoyer</button>
 						</div>

@@ -54,7 +54,7 @@
 			$categorie = new Soin_categorie();
 			$result = $categorie->supprimer( $_GET[ "id" ], $debug );
 			
-			if ( !$debug ) header( "Location: /admin/categorie/liste.php" );
+			if ( !$debug ) header( "Location: /admin/soin_categorie/liste.php" );
 		} 
 		catch (Exception $e) {
 			echo 'Erreur contactez votre administrateur <br> :',  $e->getMessage(), "\n";

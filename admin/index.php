@@ -34,11 +34,6 @@
 </head>
 <body>	
 
-  	<div class="container">       
-		<div class="col-md-4">
-			<img src="img/entete.jpg" class="img-responsive" alt="Responsive image">
-		</div>
-	</div>
 	
 	<div class="container">    
 		<div class="col-md-4">
