@@ -17,3 +17,7 @@
 #div_erreur h3, #div_erreur p {
 	color: #A20109;
 }
+
+.contenu .download  {font-family:'Channel';color:#ac0040;font-size:18px;line-height:35px;text-align:center;background:#f2f2f2;border-bottom:1px solid #aaa;clear:both;padding:25px 25px;}
+.contenu .download  a {color:#aaa;}
+.contenu .download  a:hover {color:#aaa;}

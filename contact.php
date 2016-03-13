@@ -173,8 +173,10 @@
 						<div class="large-12 columns">
 							<p>Conformément à la loi Informatique et Libertés en date du 6 janvier 1978, vous disposez d'un droit d'accès, de rectification, de modification et de suppression des données qui vous concernent. Vous pouvez exercer ce droit en nous envoyant un courrier électronique ou postal.</p>
 						</div>
+						
 					</div>
 				</form>
+				
 			</div>
 			
 			<?php include('inc/footer.php'); ?>

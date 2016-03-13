@@ -52,8 +52,11 @@
 		
 		<div class="contenu">
 			<div class="row">
-				<div class="large-12 columns">
+				<div class="large-6 columns">
 					<h2>Nos tarifs</h2>
+				</div>
+				<div class="large-6 columns">
+					<a href="tarifs2016.pdf" class="download">Voir nos tarifs soins</a>
 				</div>
 				
 				<div class="row sous-menu">

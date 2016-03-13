@@ -55,13 +55,16 @@
 				if ( !empty( $liste_actualite ) ) {
 					foreach( $liste_actualite as $_actualite ) {
 						$id_news = $_actualite[ "id_news" ];
-						$image = ( $_actualite[ "image1" ] != '' )
-							? "/photos/news" . $_actualite[ "image1" ]
+						$imageth = ( $_actualite[ "image1" ] != '' )
+							? "/photos/news/thumbs" . $_actualite[ "image1" ]
 							: "/img/marker.png";
+						$image = ( $_actualite[ "image1" ] != '' )
+						? "/photos/news" . $_actualite[ "image1" ]
+						: "/img/marker.png";
 						$date_news = traitement_datetime_affiche( $_actualite[ "date_news" ] );
 						
 						echo "<div class='large-4 medium-4 small-12 columns'>\n";
-						echo "	<img src='" . $image . "' alt=\"" . $_actualite[ "titre" ] . "\" />\n";
+						echo "	<a href='" . $image . "' class=\"fancybox\"><img src='" . $imageth . "' alt=\"" . $_actualite[ "titre" ] . "\" />\n";
 						echo "</div>\n";
 						echo "<div class='large-8 medium-8 small-12 columns'>\n";
 						echo "	<h3>" . $_actualite[ "titre" ] . "</h3>\n";

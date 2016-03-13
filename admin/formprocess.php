@@ -70,10 +70,10 @@
 				try {
 					$num_offre = $offre->modifier( $_POST, $debug );
 					
-					// ---- Suppression éventuelle des anciennes données ----------------- //
+					// ---- Suppression ï¿½ventuelle des anciennes donnï¿½es ----------------- //
 					$offre_type_bien->supprimer( $num_offre, 0, $debug );
 					
-					// ---- MAJ des types de bien associés à l'offre --------------------- //
+					// ---- MAJ des types de bien associï¿½s ï¿½ l'offre --------------------- //
 					foreach( $_POST[ "type_bien" ] as $num_type_bien ) {
 						$val[ "num_offre" ] = $num_offre;
 						$val[ "num_type_bien" ] = $num_type_bien;
@@ -202,7 +202,7 @@
 			$recherche[ "num_offre" ] = $_POST[ "num_offre" ];
 			$liste_image = $offre_image->getListe( $recherche, $debug );
 			
-			// ---- On passe toutes les autres à "non" ---- //
+			// ---- On passe toutes les autres ï¿½ "non" ---- //
 			if ( !empty( $liste_image ) ) {
 				foreach( $liste_image as $_image ) {
 					$offre_image->setChamp( "defaut", 'non', $_image[ "num_image" ], $debug );
@@ -237,7 +237,7 @@
 					// ---- Image
 					$destination = $_SERVER[ "DOCUMENT_ROOT" ] . '/photos/news' . $filenameDest;
 					if ( $debug ) echo "Destination : " . $destination . "<br>";
-					$imageManager->imageResize( $source, $destination, 183, 178, ZEBRA_IMAGE_CROP_CENTER );
+					$imageManager->imageResize( $source, $destination, null, 400 );
 					
 					// ---- Vignette
 					$destination = $_SERVER[ "DOCUMENT_ROOT" ] . '/photos/news/thumbs' . $filenameDest;

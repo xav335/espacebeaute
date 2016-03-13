@@ -47,13 +47,24 @@
 				</div>
 				<div class="photos">
 					<div class="large-4 medium-12 columns">
-						<img src="img/photos-salon-01.jpg" alt="" />
+						<a href="img/salon1.jpg" class="fancybox"><img src="img/salon1th.jpg" alt="" /></a>
 					</div>
 					<div class="large-4 medium-12 columns">
-						<img src="img/photos-salon-02.jpg" alt="" />
+						<a href="img/salon2.jpg" class="fancybox"><img  src="img/salon2th.jpg" alt="" /></a>
 					</div>
 					<div class="large-4 medium-12 columns">
-						<img src="img/photos-salon-03.jpg" alt="" />
+						<a href="img/salon3.jpg" class="fancybox"><img  src="img/salon3th.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="photos">
+					<div class="large-4 medium-12 columns">
+						<a href="img/salon4.jpg" class="fancybox"><img  src="img/salon4th.jpg" alt="" /></a>
+					</div>
+					<div class="large-4 medium-12 columns">
+						<a href="img/salon5.jpg" class="fancybox"><img   src="img/salon5th.jpg" alt="" /></a>
+					</div>
+					<div class="large-4 medium-12 columns">
+						<a href="img/salon6.jpg" class="fancybox"><img src="img/salon6th.jpg" alt="" /></a>
 					</div>
 				</div>
 			</div>
@@ -67,6 +78,8 @@
 	    $(document).ready(function(){
 		   $('nav a:nth-child(2), footer a:nth-of-type(2)').addClass('active'); 
 	    });
+
+	   
     </script>
     
   </body>

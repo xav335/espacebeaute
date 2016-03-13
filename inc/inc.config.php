@@ -46,7 +46,7 @@
 	define( "MAILCUSTOMER", 	"espace-beaute33@orange.fr" );
 	define( "MAILNAMECUSTOMER", "Institut Espace Beauté" );
 	define( "URLSITEDEFAULT", 	"http://www.institut-espace-beaute.com/" );
-	define( "FACEBOOK_LINK", 	"https://www.facebook.com/#" );
+	define( "FACEBOOK_LINK", 	"https://www.facebook.com/Institut-Espace-Beaute-521871584580288/" );
 	define( "DAILYMOTION_LINK", "#" );
 	
 	// ---- Mail d'envoi
