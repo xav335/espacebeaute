@@ -51,14 +51,22 @@
 		<?php include('inc/menu.php'); ?>
 		
 		<div class="contenu">
-			<div class="row">
-				<div class="large-6 columns">
-					<h2>Nos tarifs</h2>
-				</div>
-				<div class="large-6 columns">
-					<a href="tarifs2016.pdf" class="download">Voir nos tarifs soins</a>
+		      <div class="row">
+		        <div class="large-7 columns">
+					<a href="tarifs2016.pdf" class="download">Nouvelle méthode d'épilation</a>
 				</div>
 				
+				<div class="large-5 columns">
+					<a href="tarifs2016.pdf" class="download">Voir nos tarifs soins</a>
+				</div>
+			</div>	
+			 <div class="row">
+			     <div class="large-12 columns">
+					<h2><br><br>- Le bon cadeau -</h2>
+				</div>
+			</div>	
+			<div class="row">
+			    
 				<div class="row sous-menu">
 					<?
 					// ---- Affichage de la liste des catégories ------------- //

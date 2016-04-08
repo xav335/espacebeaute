@@ -1,6 +1,6 @@
 <footer>
 	<img src="img/logo-guinot.png" alt="GUINOT" title="GUINOT" />
-	<a href="./">Accueil</a> - <a href="le-salon.php">Le Salon</a> - <a href="nos-soins.php">Nos soins</a> - <a href="nos-tarifs.php">Nos tarifs</a> - <a href="actualite-promotion.php">Actualité/Promotion</a> - <a href="livre-dor.php">Livre d’or</a> - <a href="contact.php">Contact</a> - <a href="mentions-legales.php">Mentions légales</a><br/>
+	<a href="./">Accueil</a> - <a href="le-salon.php">L'institut</a> - <a href="nos-soins.php">Nos soins</a> - <a href="nos-tarifs.php">La carte des tarifs</a> - <a href="actualite-promotion.php">Actualité/Promotion</a> - <a href="livre-dor.php">Livre d’or</a> - <a href="contact.php">Contact</a> - <a href="mentions-legales.php">Mentions légales</a><br/>
 	3 rue du stade 33450 Saint-Loubès - 05 56 68 60 00  <br>
 	<a href="https://www.facebook.com/Institut-Espace-Beaute-521871584580288/" ><img   src="img/facebooklogo.png" alt="" /></a>
 </footer>
