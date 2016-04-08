@@ -1,8 +1,8 @@
--- MySQL dump 10.13  Distrib 5.6.21, for osx10.6 (x86_64)
+-- MySQL dump 10.13  Distrib 5.5.38, for debian-linux-gnu (x86_64)
 --
 -- Host: localhost    Database: espacebeaute
 -- ------------------------------------------------------
--- Server version	5.6.21
+-- Server version	5.5.38-0+wheezy1
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -89,7 +89,7 @@ CREATE TABLE `contact` (
   `fromgoldbook` tinyint(4) NOT NULL DEFAULT '0',
   `fromcontact` tinyint(4) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -98,7 +98,7 @@ CREATE TABLE `contact` (
 
 LOCK TABLES `contact` WRITE;
 /*!40000 ALTER TABLE `contact` DISABLE KEYS */;
-INSERT INTO `contact` VALUES (3,'test','test','t','e','s','franck_langleron@hotmail.com','test','qq',0,1,1);
+INSERT INTO `contact` VALUES (4,'eee','eeee','','','','contact@iconeo.fr','9999','test',1,0,1),(5,'Jav','gonz','','','','jav_gonz@yahoo.fr',NULL,NULL,1,0,0),(6,'xav','gonza','','','','xavier.gonzalez@free.fr',NULL,NULL,1,0,0),(7,'x','gg','','','','xavier.gonzalez@laposte.net',NULL,NULL,1,0,0),(8,'xavi','gonz','','','','xavier@gonzalez.pm',NULL,NULL,1,0,0),(9,'xavier','gonzalez','','','','fjavi.gonzalez@gmail.com',NULL,NULL,1,0,0),(10,'x','g','','','','xav335@hotmail.com',NULL,NULL,1,0,0);
 /*!40000 ALTER TABLE `contact` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -148,7 +148,6 @@ CREATE TABLE `goldbook` (
 
 LOCK TABLES `goldbook` WRITE;
 /*!40000 ALTER TABLE `goldbook` DISABLE KEYS */;
-INSERT INTO `goldbook` VALUES (1,'2015-09-06 00:00:00','Franck Langleron','franck_langleron@hotmail.com','Très professionnel ! je recommande!!',0),(2,'2015-09-07 00:00:00','Xavier Gonzalez','xavier@gonzalez.pm','Prestation nickel, très pro, très satisfait',1),(3,'2015-11-07 00:00:00','L\'angléron','franck_langleron@hotmail.com','mon message \r\nc\'est ça!!!',1),(4,'2015-11-22 00:00:00','L\'angléron','franck_langleron@hotmail.com','Blablabla...',1);
 /*!40000 ALTER TABLE `goldbook` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -202,7 +201,7 @@ CREATE TABLE `news` (
 
 LOCK TABLES `news` WRITE;
 /*!40000 ALTER TABLE `news` DISABLE KEYS */;
-INSERT INTO `news` VALUES (32,'2016-03-07 00:00:00','Gamme complete des produits solaire','Longue vie soleil,\r\nUni bronze,\r\nGrand soin après soleil,\r\nSctik indice 50 visage, \r\nCreme visage 50 \r\nSpray protestion corps ','/images_4_-32.jpg',1),(33,'2016-03-07 00:00:00','Baume Nutri Logic douceur et confort pour le corps','Adoucit et réconforte la peau immédiatement,nourrit la peau durablement,protége la peau toute la journée','/568e48fcd199c-33.jpg',1),(34,'2016-03-05 00:00:00','Minceur Rapide','La solution simple rapide et efficace,\r\ndiminution de l\'aspect visible de la cellulite,\r\nAnti -gras bruleur de  graisses\r\nAnti-eau drainage minceur','/1618_66398c-34.png',1),(35,'2016-03-03 00:00:00','Poudre soleil et le Gloss été','Effet bronzé naturellement et le gloss pour apporter le coté glamour \r\n','/10093295_duo_poudre_teint_soleil-.jpg',1),(36,'2016-03-03 00:00:00','Sérum Bioxygene','Hydratation de la peau et  redonne de éclat du teint  pour une peau en pleine forme,défatigue les traits pour un teint frais et reposé\r\nConcentré éclat et vitalité','/1626_db7ff0-36.png',1),(37,'2016-03-01 00:00:00','400 ml PROMO Gommage facile et hydrazone corps','GOMMAGE EXFOLIANT ET LE LAIT HYDRAZONE ','/56c6f2c58fec3-37.jpg',1),(38,'2016-03-04 00:00:00','Hydraderm Energy Cellular','NOUVEL APPAREIL POUR LES SOINS STAR GUINOT','/images_1_-38.jpg',1);
+INSERT INTO `news` VALUES (32,'2016-04-07 00:00:00','Gamme complete des produits solaire','Longue vie soleil,\r\nUni bronze,\r\nGrand soin après soleil,\r\nSctik indice 50 visage,\r\nSpray protestion corps ','/images_4_-32.jpg',1),(33,'2016-03-31 00:00:00','Baume Nutri Logic douceur et confort pour le corps','Adoucit et réconforte la peau immédiatement,nourrit la peau durablement,protége la peau toute la journée','/568e48fcd199c-33.jpg',1),(34,'2016-03-05 00:00:00','Minceur Rapide','La solution simple rapide et efficace,\r\ndiminution de l\'aspect visible de la cellulite,\r\nAnti -gras bruleur de  graisses\r\nAnti-eau drainage minceur','/1618_66398c-34.png',1),(35,'2016-03-03 00:00:00','Poudre soleil et le Gloss été','Effet bronzé naturellement et le gloss pour apporter le coté glamour \r\n','/10093295_duo_poudre_teint_soleil-.jpg',1),(36,'2016-03-03 00:00:00','Sérum Bioxygene','Hydratation de la peau et  redonne de éclat du teint  pour une peau en pleine forme,défatigue les traits pour un teint frais et reposé\r\nConcentré éclat et vitalité','/1626_db7ff0-36.png',1),(37,'2016-03-01 00:00:00','400 ml PROMO Gommage facile et hydrazone corps','GOMMAGE EXFOLIANT ET LE LAIT HYDRAZONE ','/56c6f2c58fec3-37.jpg',1),(38,'2016-03-04 00:00:00','Hydraderm Energy Cellular','NOUVEL APPAREIL POUR LES SOINS STAR GUINOT','/images_1_-38.jpg',1);
 /*!40000 ALTER TABLE `news` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -219,7 +218,7 @@ CREATE TABLE `newsletter` (
   `titre` varchar(250) DEFAULT NULL,
   `bas_page` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -228,7 +227,7 @@ CREATE TABLE `newsletter` (
 
 LOCK TABLES `newsletter` WRITE;
 /*!40000 ALTER TABLE `newsletter` DISABLE KEYS */;
-INSERT INTO `newsletter` VALUES (12,'2015-01-01 00:00:00','Ceci est la toute nouvelle actu',' ');
+INSERT INTO `newsletter` VALUES (12,'2015-01-01 00:00:00','Les nouveautés espace beauté','Contact@espac.fr'),(13,'2016-03-14 00:00:00','test de soin',' ');
 /*!40000 ALTER TABLE `newsletter` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -247,7 +246,7 @@ CREATE TABLE `newsletter_detail` (
   `link` varchar(250) DEFAULT NULL,
   `texte` text,
   PRIMARY KEY (`id`,`id_newsletter`)
-) ENGINE=InnoDB AUTO_INCREMENT=327 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=331 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -256,7 +255,7 @@ CREATE TABLE `newsletter_detail` (
 
 LOCK TABLES `newsletter_detail` WRITE;
 /*!40000 ALTER TABLE `newsletter_detail` DISABLE KEYS */;
-INSERT INTO `newsletter_detail` VALUES (326,12,'','/IMG_5187-12.jpg','http://dev.votreimmopro.com','');
+INSERT INTO `newsletter_detail` VALUES (329,12,'Soin de la peau Grande Promo','/35e221e3ebd787de0636cac049b9461d-12.jpg','http://espacebeaute.iconeo.es','ce mois ci promotion sur le soin du visage'),(330,13,'Soin de la peau Grande Promo','/5496657cbfcac17aa12617a4ea6154ec-.jpg','http://www.institut-espace-beaute.com/','Le soleil arrive ');
 /*!40000 ALTER TABLE `newsletter_detail` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -275,7 +274,7 @@ CREATE TABLE `soin` (
   `image` varchar(50) NOT NULL,
   `online` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -284,7 +283,7 @@ CREATE TABLE `soin` (
 
 LOCK TABLES `soin` WRITE;
 /*!40000 ALTER TABLE `soin` DISABLE KEYS */;
-INSERT INTO `soin` VALUES (1,1,'Peel\'in / Peel\'out','Le gel peel\'in aux acides de fruits dissocie les cellules mortes des cellules vivantes et la mousse peel\'out exfolie les cellules mortes pour faire renaitre l\'éclat d\'une peau neuve','/35e221e3ebd787de0636cac049b9461d-1.jpg','1'),(7,7,'Douceur Relaxant  (californien ,sportifs,balinais)','Succombez à une merveilleuse sensation de bien être et de détente\r\nSoin manuel délassant détoxifie la peau et vous procure un instant de détente et de plénitude absolue.','/GUINOT_MASSAGE-7.jpg','1'),(9,6,'Soin Minceur ','30 min le soin traite toutes les surfaces du corps  et permet de réduire la cellulite partout ou elle se trouve en instant sur les zones critiques telles que le ventre,les hanches et les cuisses \r\nréduit visiblement l\'aspect capitonné de la peau et agit au coeur des cellules.\r\nVotre silhouette  retrouve ses formes','/images_3_-9.jpg','1'),(10,4,'Soin Pro-collagène ','50 Min le soin Liftosome est un soin dédié 100% à la fermeté et la jeunesse de la peau ;aide votre peau à retrouver toutes son élasticité.','/35e221e3ebd787de0636cac049b9461d-10.jpg','1'),(12,13,'Hydradermie Lift','60 Min le visage parait plus jeune la peau est raffermie,les traits sont remontés.\r\nil agit profondément en remontant les traits par la stimulation des muscles le visage est visiblement lifté\r\nSoin effet lifting en institut ,si puissant qu\'il défie instantanément la chirurgie esthetique','','1'),(13,15,'Hydraderm','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Hydratation\r\n*Pureté\r\n*Nutrition\r\n*Prepartion/ Réparation solaire','','1'),(14,15,'Hydradermie Jeunesse','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Anti Rides','/84201c33_5a8a_470d_955c_b1fb9d78-14.jpg','1'),(15,15,'Hydradermie Lift','60 Min le visage parait plus jeune la peau est raffermie,les traits sont remontés.\r\nil agit profondément en remontant les traits par la stimulation des muscles le visage est visiblement lifté\r\nSoin effet lifting en institut ,si puissant qu\'il défie instantanément la chirurgie esthetique.\r\n*Age Logic Anti -Age','/84201c33_5a8a_470d_955c_b1fb9d78-15.jpg','1'),(16,16,'Eye logic','Soin du contour des yeux\r\ncible les rides et ridules (patte d\'oie ride du lion)\r\ncible les cernes et les poches du contour des yeux','/images-16.jpg','1'),(17,17,'Age Summum','50 Min pour enlever les années à votre visage\r\ndes actifs puissants,gommage dermabrasion ,vitamine C pure hautement concentrée,sérum age summum enrichi a l\'acide hyaluronique,puis le masque éclat au pro collagène\r\nDes la fin du soin,la peau parait visiblement plus jeunes et les signes de l\'age sont atténués','/soin_guinot_summum-17.jpg','1'),(18,5,'Visage et Corps','Sourcils ou Lèvre\r\nMenton\r\nJoues\r\nDemi Jambes\r\nJambes Entières\r\nAisselles\r\nMaillot Normal,Semi,Intégrale\r\nTrose /Dos\r\n\r\n\r\n','/technispa_minceur_guinot_beaut_-18.jpg','1'),(19,18,'Maquillage','Mariée ,\r\nJour,\r\nSoirée,\r\nRéveillon de nouvel année\r\n','/Fotolia_39356433_XS-.jpg','1'),(20,18,'Soin des Mains et Soin des Pieds','Mise en beauté des ongles avec ou sans pose de vernis','/SallyHayden_Guinot3-20.jpg','1');
+INSERT INTO `soin` VALUES (7,7,'Douceur Relaxant  (californien ,sportifs,balinais)','Succombez à une merveilleuse sensation de bien être et de détente\r\nSoin manuel délassant détoxifie la peau et vous procure un instant de détente et de plénitude absolue.','/GUINOT_MASSAGE-7.jpg','1'),(9,7,'Soin Minceur ','30 min le soin traite toutes les surfaces du corps  et permet de réduire la cellulite partout ou elle se trouve en instant sur les zones critiques telles que le ventre,les hanches et les cuisses \r\nréduit visiblement l\'aspect capitonné de la peau et agit au coeur des cellules.\r\nVotre silhouette  retrouve ses formes','/images_3_-9.jpg','1'),(10,1,'Soin Pro-collagène ','50 Min le soin Liftosome est un soin dédié 100% à la fermeté et la jeunesse de la peau ;aide votre peau à retrouver toutes son élasticité.','/35e221e3ebd787de0636cac049b9461d-10.jpg','1'),(12,13,'Hydradermie Lift','60 Min le visage parait plus jeune la peau est raffermie,les traits sont remontés.\r\nil agit profondément en remontant les traits par la stimulation des muscles le visage est visiblement lifté\r\nSoin effet lifting en institut ,si puissant qu\'il défie instantanément la chirurgie esthetique','','1'),(13,15,'Hydraderm','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Hydratation\r\n*Pureté\r\n*Nutrition\r\n*Prepartion/ Réparation solaire','/84201c33_5a8a_470d_955c_b1fb9d78-13.jpg','1'),(14,15,'Hydradermie Jeunesse','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Anti Rides','/84201c33_5a8a_470d_955c_b1fb9d78-14.jpg','1'),(15,15,'Hydradermie Lift','60 Min le visage parait plus jeune la peau est raffermie,les traits sont remontés.\r\nil agit profondément en remontant les traits par la stimulation des muscles le visage est visiblement lifté\r\nSoin effet lifting en institut ,si puissant qu\'il défie instantanément la chirurgie esthetique.\r\n*Age Logic Anti -Age','/84201c33_5a8a_470d_955c_b1fb9d78-15.jpg','1'),(17,17,'Age Summum','50 Min pour enlever les années à votre visage\r\ndes actifs puissants,gommage dermabrasion ,vitamine C pure hautement concentrée,sérum age summum enrichi a l\'acide hyaluronique,puis le masque éclat au pro collagène\r\nDes la fin du soin,la peau parait visiblement plus jeunes et les signes de l\'age sont atténués','/soin_guinot_summum-17.jpg','1'),(18,5,'Visage et Corps','Sourcils ou Lèvre\r\nMenton\r\nJoues\r\nDemi Jambes\r\nJambes Entières\r\nAisselles\r\nMaillot Normal,Semi,Intégrale\r\nTrose /Dos\r\n\r\n\r\n','/technispa_minceur_guinot_beaut_-18.jpg','1'),(19,18,'Maquillage','Mariée ,\r\nJour,\r\nSoirée,\r\nRéveillon de nouvel année\r\n','/Fotolia_39356433_XS-.jpg','1'),(20,18,'Soin des Mains et Soin des Pieds','Mise en beauté des ongles avec ou sans pose de vernis','/main_et_pied-20.jpg','1'),(23,5,'Fini les poils','*Aisselles Femme/Homme\r\n*Maillot Classique ,Maillot Semi, Maillot intégrale, SIF/ Femme\r\n*Fesse Femme\r\n*Demi Jambes Femme /Homme\r\n*Cuisse Femme /Homme\r\n*Jambes entière Femme /Homme\r\n*Lèvre /Menton\r\n*Bas du Dos Femme\r\n*Dos complet/Torse \r\n*Nuque','/epilation_definitive-.jpg','1'),(24,9,'Eye logic','Soin du contour des yeux\r\ncible les rides et ridules (patte d\'oie, ride du lion)\r\ncible les cernes et les poches du contour des yeux','/images-.jpg','1');
 /*!40000 ALTER TABLE `soin` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -300,7 +299,7 @@ CREATE TABLE `soin_categorie` (
   `titre` varchar(50) NOT NULL,
   `sous_titre` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -309,7 +308,7 @@ CREATE TABLE `soin_categorie` (
 
 LOCK TABLES `soin_categorie` WRITE;
 /*!40000 ALTER TABLE `soin_categorie` DISABLE KEYS */;
-INSERT INTO `soin_categorie` VALUES (1,'Beauté neuve','Les secrets du soin'),(4,'Liftosome','Les secrets du soin'),(5,'Epilation','Plus nette, plus longtemps'),(6,'Soin Minceur ',' Corps Amincissant'),(7,'Douceur et détente','Massage du  corps'),(9,'Eye logic','soin contour des yeux'),(10,'Age Summum','50 min pour gommer les signes de l\'age'),(15,'Soin Visage',''),(16,'Traintement des yeux',''),(17,'Traitement des signes de l\' age','Age Summum'),(18,'Mise en Beaute','');
+INSERT INTO `soin_categorie` VALUES (4,'Les secrets des soins',' Liftosome'),(5,'Epilation','Plus nette, plus longtemps'),(7,'Douceur et détente',''),(9,'Traitement des signes de l\' age','Traitement des yeux'),(15,'Soin Visage','Energy Cellular'),(17,'Traitement des signes de l\' age','Age Summum'),(18,'Mise en Beaute','');
 /*!40000 ALTER TABLE `soin_categorie` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -329,7 +328,7 @@ CREATE TABLE `tarif` (
   `image` varchar(50) NOT NULL,
   `online` enum('0','1') NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -338,7 +337,7 @@ CREATE TABLE `tarif` (
 
 LOCK TABLES `tarif` WRITE;
 /*!40000 ALTER TABLE `tarif` DISABLE KEYS */;
-INSERT INTO `tarif` VALUES (4,2,'fini les poils','Possibilite epilaction sur zones\r\nFORFAIT 5 SEANCES\r\n*Maillot\r\n*Aisselles\r\n*Jambes\r\n*Torse/dos\r\n*Levre/Menton',250,'/369x200-4.jpg','1'),(5,9,'Age Summum','50 Min pour enlever les années à votre visage\r\ndes actifs puissants,gommage dermabrasion ,vitamine C pure hautement concentrée,sérum age summum enrichi a l\'acide hyaluronique,puis le masque éclat au pro collagène\r\nDes la fin du soin,la peau parait visiblement plus jeunes et les signes de l\'age sont atténués',93,'/soin_guinot_summum-5.jpg','1'),(7,4,'Lifting Immediat','60 Min le visage parait plus jeune la peau est raffermie,les traits sont remontés.\r\nil agit profondément en remontant les traits par la stimulation des muscles le visage est visiblement lifté\r\nSoin effet lifting en institut ,si puissant qu\'il défie instantanément la chirurgie esthetique',91,'','1'),(8,7,'Soin Pro-collagène ','50 Min le soin Liftosome est un soin dédié 100% à la fermeté et la jeunesse de la peau ;aide votre peau à retrouver toutes son élasticité.',79,'/SOIN_GUINOT-8.jpg','1'),(9,5,'Douceur Relaxant (californien ,sportifs,balinais)','Succombez à une merveilleuse sensation de bien être et de détente\r\nSoin manuel délassant détoxifie la peau et vous procure un instant de détente et de plénitude absolue.',78,'/soin_corps_guinot-9.jpg','1'),(10,1,'Minceur','30 min le soin traite toutes les surfaces du corps et permet de réduire la cellulite partout ou elle se trouve en instant sur les zones critiques telles que le ventre,les hanches et les cuisses \r\nréduit visiblement l\'aspect capitonné de la peau et agit au coeur des cellules.\r\nVotre silhouette retrouve ses formes',30,'/images_3_-10.jpg','1'),(11,4,'Hydraderm','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Hydratation\r\n*Pureté\r\n*Nutrition\r\n*Prepartion/ Réparation solaire',65,'','1'),(12,4,'Hydradermie Jeunesse','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Anti Rides\r\n',79,'','1'),(13,9,'Eye logic','Soin du contour des yeux\r\ncible les rides etridules (patte d\'oie, ride du lion)\r\ncible les cernes et les poches du contour des yeux',56,'/images-13.jpg','1');
+INSERT INTO `tarif` VALUES (4,10,'fini les poils','Possibilite epilaction sur zones sur 3 zones -15%et sur 4 zones -25%\r\nFORFAIT 5/6 SEANCES\r\n*Maillot classique, Maillot semi,Maillot integrale ,SIF\r\n*Aisselles\r\n*Jambes Femme ou Homme\r\n*Demi Jambes \r\n*Cuisses\r\n*Torse/dos partiel ou complet/bas dos Femme\r\n*Levre/Menton\r\n*Nuque\r\n*Bras\r\n*Fesses femme ',0,'/epilaction-4.png','1'),(5,9,'Age Summum','50 Min pour enlever les années à votre visage\r\ndes actifs puissants,gommage dermabrasion ,vitamine C pure hautement concentrée,sérum age summum enrichi a l\'acide hyaluronique,puis le masque éclat au pro collagène\r\nDes la fin du soin,la peau parait visiblement plus jeunes et les signes de l\'age sont atténués',93,'/soin_guinot_summum-5.jpg','1'),(7,4,'Lifting Immediat','60 Min le visage parait plus jeune la peau est raffermie,les traits sont remontés.\r\nil agit profondément en remontant les traits par la stimulation des muscles le visage est visiblement lifté\r\nSoin effet lifting en institut ,si puissant qu\'il défie instantanément la chirurgie esthetique',91,'/84201c33_5a8a_470d_955c_b1fb9d78-7.jpg','1'),(8,7,'Soin Pro-collagène ','50 Min le soin Liftosome est un soin dédié 100% à la fermeté et la jeunesse de la peau ;aide votre peau à retrouver toutes son élasticité.',79,'/SOIN_GUINOT-8.jpg','1'),(9,5,'Douceur Relaxant (californien ,sportifs,balinais)','Succombez à une merveilleuse sensation de bien être et de détente\r\nSoin manuel délassant détoxifie la peau et vous procure un instant de détente et de plénitude absolue.',78,'/soin_corps_guinot-9.jpg','1'),(10,1,'Minceur','30 min le soin traite toutes les surfaces du corps et permet de réduire la cellulite partout ou elle se trouve en instant sur les zones critiques telles que le ventre,les hanches et les cuisses \r\nréduit visiblement l\'aspect capitonné de la peau et agit au coeur des cellules.\r\nVotre silhouette retrouve ses formes',30,'/images_3_-10.jpg','1'),(11,4,'Hydraderm','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Hydratation\r\n*Pureté\r\n*Nutrition\r\n*Prepartion/ Réparation solaire',65,'/84201c33_5a8a_470d_955c_b1fb9d78-11.jpg','1'),(12,4,'Hydradermie Jeunesse','60 min Hydradermie la star des soins \r\nle soin sur mesure pour une peau éclatante de beauté\r\nle soin se décline avec des objectifs beauté et le type de peau \r\n*Anti Rides\r\n',79,'/84201c33_5a8a_470d_955c_b1fb9d78-12.jpg','1'),(13,9,'Eye logic','Soin du contour des yeux\r\ncible les rides etridules (patte d\'oie, ride du lion)\r\ncible les cernes et les poches du contour des yeux',56,'/images-13.jpg','1'),(14,10,'Epilation','Sourcils ou Lèvre\r\nMenton\r\nJoues\r\nDemi Jambes\r\nJambes Entières\r\nAisselles\r\nMaillot Normal,Semi,Intégrale\r\nTrose /Dos',9,'/technispa_minceur_guinot_beaut_-.jpg','1'),(15,5,'Soin Minceur ','30 min le soin traite toutes les surfaces du corps et permet de réduire la cellulite partout ou elle se trouve en instant sur les zones critiques telles que le ventre,les hanches et les cuisses \r\nréduit visiblement l\'aspect capitonné de la peau et agit au coeur des cellules.\r\nVotre silhouette retrouve ses formes',30,'/images_3_-15.jpg','1');
 /*!40000 ALTER TABLE `tarif` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -353,7 +352,7 @@ CREATE TABLE `tarif_categorie` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `titre` varchar(50) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -362,7 +361,7 @@ CREATE TABLE `tarif_categorie` (
 
 LOCK TABLES `tarif_categorie` WRITE;
 /*!40000 ALTER TABLE `tarif_categorie` DISABLE KEYS */;
-INSERT INTO `tarif_categorie` VALUES (1,'Corps'),(2,'Epilaction'),(4,'Soin Visage'),(5,'Soin Detente'),(6,'Soin Minceur '),(7,'Liftosome'),(8,'Hydradermie Lift'),(9,'Soin traitant les signes de l\'age');
+INSERT INTO `tarif_categorie` VALUES (2,'Epilaction'),(4,'Soin Visage'),(5,'Soin Detente'),(6,'Soin Minceur '),(7,'Liftosome'),(8,'Hydradermie Lift'),(9,'Soin traitant les signes de l\'age'),(10,'Epilation');
 /*!40000 ALTER TABLE `tarif_categorie` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -375,4 +374,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-03-13 18:00:55
+-- Dump completed on 2016-04-08 11:04:18
