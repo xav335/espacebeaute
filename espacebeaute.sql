@@ -125,6 +125,31 @@ LOCK TABLES `contact_categorie` WRITE;
 UNLOCK TABLES;
 
 --
+-- Table structure for table `divers`
+--
+
+DROP TABLE IF EXISTS `divers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `divers` (
+  `num_divers` int(11) NOT NULL AUTO_INCREMENT,
+  `pdf_methode_depilation` varchar(100) NOT NULL,
+  `pdf_tarif_soin` varchar(100) NOT NULL,
+  PRIMARY KEY (`num_divers`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `divers`
+--
+
+LOCK TABLES `divers` WRITE;
+/*!40000 ALTER TABLE `divers` DISABLE KEYS */;
+INSERT INTO `divers` VALUES (1,'tarif_site_2016_2016_04_13.pdf','TARIF2016_2016_04_13.pdf');
+/*!40000 ALTER TABLE `divers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `goldbook`
 --
 
@@ -374,4 +399,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2016-04-08 11:04:18
+-- Dump completed on 2016-04-13 18:21:35

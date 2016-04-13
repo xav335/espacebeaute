@@ -1,12 +1,17 @@
 <?
 	include_once ( $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/utils.php" );
 	require( $_SERVER[ "DOCUMENT_ROOT" ] . "/inc/inc.config.php" );
+	require $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/Divers.php";
 	require $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/Tarif_categorie.php";
 	require $_SERVER[ "DOCUMENT_ROOT" ] . "/admin/classes/Tarif.php";
 	
 	$debug = false;
+	$divers = new Divers();
 	$categorie = new Tarif_categorie();
 	$tarif = new Tarif();
+	
+	// ---- Chargement des infos diverses ------- //
+	$info_divers = $divers->load( 1, $debug );
 	
 	// ---- Liste des catégories disponibles ---- //
 	if ( 1 == 1 ) {
@@ -51,17 +56,25 @@
 		<?php include('inc/menu.php'); ?>
 		
 		<div class="contenu">
-		      <div class="row">
-		        <div class="large-7 columns">
-					<a href="tarifs2016.pdf" class="download">Nouvelle méthode d'épilation</a>
-				</div>
-				
-				<div class="large-5 columns">
-					<a href="tarifs2016.pdf" class="download">Voir nos tarifs soins</a>
-				</div>
+			<div class="row">
+				<?
+				// ---- PDF "Méthode dépilation" ------------------ //
+		      	if ( $info_divers[ 0 ][ "pdf_methode_depilation" ] != '' && file_exists( $_SERVER[ "DOCUMENT_ROOT" ] . "/pdf/" . $info_divers[ 0 ][ "pdf_methode_depilation" ] ) ) {
+			        echo "<div class='large-7 columns'>\n";
+					echo "	<a href='/pdf/" . $info_divers[ 0 ][ "pdf_methode_depilation" ] . "' class='download' target='_blank'>Nouvelle méthode d'épilation</a>\n";
+					echo "</div>\n";
+				}
+					
+				// ---- PDF "Tarifs soins" ------------------------ //
+				if ( $info_divers[ 0 ][ "pdf_tarif_soin" ] != '' && file_exists( $_SERVER[ "DOCUMENT_ROOT" ] . "/pdf/" . $info_divers[ 0 ][ "pdf_tarif_soin" ] ) ) {
+					echo "<div class='large-5 columns'>\n";
+					echo "	<a href='/pdf/" . $info_divers[ 0 ][ "pdf_tarif_soin" ] . "' class='download' target='_blank'>Voir nos tarifs soins</a>\n";
+					echo "</div>\n";
+				}
+				?>
 			</div>	
-			 <div class="row">
-			     <div class="large-12 columns">
+			<div class="row">
+				<div class="large-12 columns">
 					<h2><br><br>- Le bon cadeau -</h2>
 				</div>
 			</div>	

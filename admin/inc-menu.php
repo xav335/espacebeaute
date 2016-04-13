@@ -23,6 +23,7 @@
 					          	<a href="/admin/tarif_categorie/liste.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Nos tarifs<span class="caret"></span></a>
 					          	<ul class="dropdown-menu" role="menu">
 					            	<li><a href="/admin/tarif_categorie/liste.php">Catégories</a></li>
+					            	<li><a href="/admin/tarif/gestion_pdf.php">Gestion des PDFs</a></li>
 					          		<li class="divider"></li>
 					            	<li><a href="/admin/tarif/edition.php">Ajout Tarifs</a></li>
 					            	<li><a href="/admin/tarif/liste.php">Modif / Suppr</a></li>
